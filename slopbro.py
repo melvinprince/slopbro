@@ -59,10 +59,12 @@ TARGET_APPS = [
 ]
 
 ENTRY_PAGE = "index.html"
-SHELL_SCRIPT = "autoroot.sh"
+SHELL_SCRIPT = "collect.sh"
 SERVICE_FILES = [
     "package.json",
     "main.js",
+    # Local copy so the TV does not need GitHub access mid-exploit.
+    "hbchannel.ipk",
 ]
 
 ASSET_SOURCE_AUTO = "auto"
